@@ -29,13 +29,15 @@
 		    cd ~
 			
     4·解压：
+           http://www.cnblogs.com/daizhuacai/archive/2013/07/06/3174885.html
 	   .gz
     	    gunzip filename.gz
 	    .tar.gz
     	    tar -zxvf filename.tar.gz /home/filefolder
 	    .zip
 	        unzip filename.zip
-	
+	        解压到指定目录：
+                    unzip -d /temp filename.zip
 	5·压缩：
 	    .zip
 		    zip -r filename.zip directory_to_compress
@@ -44,7 +46,7 @@
 	
     6·新建文件夹：	
 	    mkdir filefolder
-		
+	    mkdir -p filefolder_1/filefolder_2
 	7·新建文件：
 	    touch filename.cpp/..
 	
@@ -67,7 +69,10 @@
 			
 		mv filefolder_A  filefolder_B/filefolder_C
 		    将filefolder_A 移动到filefolder_B下并重新名为filefolder_C
-		
+	12 ./与 ../
+            "./" ：代表当前目录
+            "../"：代表上一层目录
+            "/"  : 代表根目录
 	    	 
 二、CRC-Remote-sever
     1·账户：
