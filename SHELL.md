@@ -34,7 +34,7 @@
     1) echo "Some txt": Print "Some txt" to visual interface
     2) ls: file list
     3) wc -l file_archive.txt: calculate the line in the file_archive
-	4) wc -w file_archive.txt: calculate the number of word in file_archive
+    4) wc -w file_archive.txt: calculate the number of word in file_archive
 	5) wc -c file_archive.txt: calculate the number of string in file_archive
 	6) cp sourcefile destfile: copy file
 	7) mv oldname newname: move file or rename file

@@ -46,7 +46,9 @@
 	
     6·新建文件夹：	
 	    mkdir filefolder
-	    mkdir -p filefolder_1/filefolder_2
+	    # 递归创建目录
+		mkdir -p filefolder_1/filefolder_2
+		
 	7·新建文件：
 	    touch filename.cpp/..
 	
