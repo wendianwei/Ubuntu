@@ -1,5 +1,3 @@
-
-
 1. 首先在服务器上安装ssh的服务器端。
 $ sudo aptitude install openssh-server
 
@@ -16,8 +14,7 @@ $ ssh -l xxu8 crcfe02.crc.nd.edu
 接下来会提示输入密码，然后就能成功登录到服务器上了。
 
 5. exit() 
-   推出 ssh 链接
-
+   退出 ssh 链接
 
 在linux下一般用scp这个命令来通过ssh传输文件。
 

@@ -10,7 +10,11 @@
 			sudo apt install archieve-name
 			(ubuntu<17.04)
 			sudo apt-get install archieve-name
-			
+	    linux内核版本查询两种方法：
+	       （1）cat /proc/version
+		   （2）uname -a
+		linux 系统版本：
+	        lsb_release -a
 		更新：
 		    (ubuntu>=17.04)
 			sudo apt --upgrade install archieve-name
@@ -43,6 +47,20 @@
 		    zip -r filename.zip directory_to_compress
 		.tar
 		    tar -zcvf filename.tar.gz directory_to_compress
+		
+		rar常用命令主要有:
+
+            e 将文件解压到当前目录
+              例:unrar e test.rar
+              注:用e解压的话，不仅原来的file1.txt和file2.txt被解压到当前目录，就连dir1里面的所有文件
+              也被解压到当前目录下，不能保持压缩前的目录结构，如果想保持压缩前的目录结构，用x解压
+
+            x 带路径解压文档中内容到当前目录
+              例:unrar x test.rar
+                 这样解压的话，dir1就会保持原来的目录结构
+			
+			d 从文档中删除文件
+              例:rar d test.rar file1.txt
 	
     6·新建文件夹：	
 	    mkdir filefolder
