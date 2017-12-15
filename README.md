@@ -186,6 +186,87 @@
             make install
 			 
     	
-	
+五、安装notepad++
+    
+
+    sudo add-apt-repository ppa:notepadqq-team/notepadqq
+    sudo apt-get update
+    sudo apt-get install notepadqq
+
+    卸载命令如下：
+
+    sudo apt-get remove notepadqq
+    sudo add-apt-repository --remove ppa:notepadqq-team/notepadqq	
+
+六、安装pip
+   安装pip的方法：
+      Install pip and virtualenv for Ubuntu 16.04LTS Maverick and newer,输入下面命令
+
+      $ sudo apt-get install python-pip python-dev build-essential 
+      $ sudo pip install --upgrade pip 
+      $ sudo pip install --upgrade virtualenv 
+   
+七、更换系统源：
+
+  首先备份系统源
+
+    sudo cp /etc/apt/sources-list  /etc/apt/sources-list.bak
+
+  将sources-list更换成下面的源
+
+  清华大学源：
+  复制代码
+
+  deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial main restricted
+  deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial-updates main restricted
+  deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial universe
+  deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial-updates universe
+  deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial multiverse
+  deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial-updates multiverse
+  deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial-backports main restricted universe multiverse
+  deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial-security main restricted
+  deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial-security universe
+  deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial-security multiverse
+
+或阿里源
+复制代码
+deb-src http://archive.ubuntu.com/ubuntu xenial main restricted #Added by software-properties
+deb http://mirrors.aliyun.com/ubuntu/ xenial main restricted
+deb-src http://mirrors.aliyun.com/ubuntu/ xenial main restricted multiverse universe #Added by software-properties
+deb http://mirrors.aliyun.com/ubuntu/ xenial-updates main restricted
+deb-src http://mirrors.aliyun.com/ubuntu/ xenial-updates main restricted multiverse universe #Added by software-properties
+deb http://mirrors.aliyun.com/ubuntu/ xenial universe
+deb http://mirrors.aliyun.com/ubuntu/ xenial-updates universe
+deb http://mirrors.aliyun.com/ubuntu/ xenial multiverse
+deb http://mirrors.aliyun.com/ubuntu/ xenial-updates multiverse
+deb http://mirrors.aliyun.com/ubuntu/ xenial-backports main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ xenial-backports main restricted universe multiverse #Added by software-properties
+deb http://archive.canonical.com/ubuntu xenial partner
+deb-src http://archive.canonical.com/ubuntu xenial partner
+deb http://mirrors.aliyun.com/ubuntu/ xenial-security main restricted
+deb-src http://mirrors.aliyun.com/ubuntu/ xenial-security main restricted multiverse universe #Added by software-properties
+deb http://mirrors.aliyun.com/ubuntu/ xenial-security universe
+deb http://mirrors.aliyun.com/ubuntu/ xenial-security multiverse
+更新下源
+
+sudo apt-get update
+sudo apt-get upgrade
+ 
+八、更换pip源
+
+在用户目录下创建.pip文件夹，并创建pip.conf文件
+
+1 [global]
+2 trusted-host =  pypi.mirrors.ustc.edu.cn
+3 index-url = https://pypi.mirrors.ustc.edu.cn/simple
+
+或者
+  另外一个事情是将pip源指向阿里云的源镜像：http://mirrors.aliyun.com/help/pypi，具体添加一个 ~/.config/pip/pip.conf 文件，设置为：
+
+[global]
+trusted-host =  mirrors.aliyun.com
+index-url = http://mirrors.aliyun.com/pypi/simple
+
+
 	
 	    
